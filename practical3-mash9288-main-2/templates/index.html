@@ -1,0 +1,33 @@
+<!-- Inherits from layout.html -->
+{% extends "layout.html" %}
+<!-- The block content replace the one encapsulated in  layout.html -->
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <section id="model" class="col-12 centered">
+            <div id="webcam-wrapper">
+              
+            </div>
+            <div id="graph-wrapper"></div>
+        </section>
+    </div>
+</div>
+<div class="row mt-5">
+    <form class="w-75 mx-auto" name="frmModel" action="/adduser" method="post" novalidate>
+        <fieldset  class="form-group col-12 centered">
+            <legend>{{title}}</legend>
+            
+           
+    
+        </fieldset >
+    </form>
+
+    <div class="centered">
+        <h1 id="result"></h1>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+{% endblock %}
